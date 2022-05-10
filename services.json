@@ -1,17 +1,11 @@
 {
-    "en": {
-        "es": {
-            "configuration": "./models/en-es/decoder.yml",
-            "sourcebpe": "./models/en-es/source.bpe",
+    "ru": {
+        "en": {
+            "configuration": "./models/ru-en/decoder.yml",
+            "sourcespm": "./models/ru-en/source.spm",
+			"targetspm": "./models/ru-en/target.spm",
             "host": "localhost",
             "port": "10001"
-        },
-        "fi": {
-            "configuration": "./models/en-fi/decoder.yml",
-            "sourcespm": "./models/en-fi/source.spm",
-            "targetspm": "./models/en-fi/target.spm",
-            "host": "localhost",
-            "port": "10002"
         }
     }
 }
