@@ -45,7 +45,8 @@ class ContentProcessor():
 
     def preprocess(self, srctxt):
         normalized_text = '\n'.join(self.normalizer(line) for line in srctxt.split('\n'))   # normalizer do not accept '\n'
-        sentSource = self.sentence_splitter([normalized_text])  
+        print("Norm text: {}".format(normalized_text))
+        sentSource = self.sentence_splitter([normalized_text])
         self.sentences=[]
         for s in sentSource:
             if self.tokenizer:
